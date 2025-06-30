@@ -68,7 +68,7 @@
         let nickname = prompt("Enter your nickname:");
         socket.emit("choose name", nickname);
 
-        // Submit message
+        // Submit message..
         form.addEventListener('submit', function (e) {
             e.preventDefault();
             if (input.value) {
