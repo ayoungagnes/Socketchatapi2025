@@ -30,7 +30,7 @@ io.on("connection", (socket) => {
       text: "has joined the chat",
     });
 
-    // Update all clients with the new user list
+    // Update all clients with the new user list.
     io.emit("update user list", Object.values(users));
   });
 
