@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-// Store users with their socket.id..
+// Store users with their socket.id
 let users = {};
 
 io.on("connection", (socket) => {
